@@ -10,3 +10,33 @@ const getRockets = createAsyncThunk('rockets/getRockets', async () => {
   const data = await response.json();
   return data;
 });
+
+// REDUCER
+const rocketsSlice = createSlice({
+  name: 'rockets',
+  initialState: {
+    rockets: [],
+    status: null,
+    hasErrors: false,
+  },
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(getRockets.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(getRockets.fulfilled, (state, action) => {
+        state.rockets = action.payload;
+        state.status = 'success';
+        state.hasErrors = false;
+      })
+      .addCase(getRockets.rejected, (state) => {
+        state.status = 'failed';
+        state.hasErrors = true;
+      });
+  },
+});
+
+// SELECTORS
+export default rocketsSlice.reducer;
+export { getRockets };
