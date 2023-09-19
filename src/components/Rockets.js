@@ -8,8 +8,31 @@ const Rockets = () => {
   const rockets = useSelector((state) => state.rockets.rockets); // Use the correct slice name
   // console.log('Rockets:', rockets);
 
-    // FETCH ROCKETS DATA ON PAGE LOAD
-    useEffect(() => {
-      dispatch(getRockets());
-    }, [dispatch]);
-}
+  // FETCH ROCKETS DATA ON PAGE LOAD
+  useEffect(() => {
+    dispatch(getRockets());
+  }, [dispatch]);
+
+  // SHOW LOADING, ERROR, OR ROCKETS DATA
+  const renderRockets = () => {
+    if (rockets.length === 0) {
+      return <p>Loading rockets...</p>;
+    }
+
+    return rockets.map((rocket) => (
+      <div key={rocket.id}>
+        <h2>{rocket.name}</h2>
+        <p>{rocket.description}</p>
+      </div>
+    ));
+  };
+
+  return (
+    <section>
+      <h1>Rockets</h1>
+      {renderRockets()}
+    </section>
+  );
+};
+
+export default Rockets;
