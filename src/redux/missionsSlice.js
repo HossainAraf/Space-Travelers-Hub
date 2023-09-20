@@ -1,3 +1,4 @@
+// IMPORTS
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 // API
@@ -9,6 +10,7 @@ const getMissions = createAsyncThunk('missions/getMissions', async () => {
   const data = await response.json();
   return data;
 });
+
 // REDUCER
 const missionsSlice = createSlice({
   name: 'missions',

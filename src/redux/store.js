@@ -3,12 +3,12 @@ import { combineReducers } from 'redux';
 // import { useDispatch } from 'react-redux';
 // import userReducer from './user/userSlice';
 import rocketsReducer from './rocketsSlice';
-// import missionsReducer from './missions/missionsSlice';
+import missionsReducer from './missionsSlice';
 
 const reducer = combineReducers({
   // user: userReducer,
   rockets: rocketsReducer,
-  // missions: missionsReducer,
+  missions: missionsReducer,
 });
 
 const store = configureStore({
