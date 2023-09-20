@@ -26,7 +26,11 @@ const missionsSlice = createSlice({
         state.status = 'loading';
       })
       .addCase(getMissions.fulfilled, (state, action) => {
-        state.missions = action.payload;
+        state.missions = action.payload.map((mission) => ({
+          id: mission.mission_id,
+          name: mission.mission_name,
+          description: mission.description,
+        }));
         state.status = 'success';
         state.hasErrors = false;
       })
