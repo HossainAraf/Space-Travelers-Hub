@@ -26,7 +26,13 @@ const rocketsSlice = createSlice({
         state.status = 'loading';
       })
       .addCase(getRockets.fulfilled, (state, action) => {
-        state.rockets = action.payload;
+        state.rockets = action.payload.map((rocket) => ({
+          id: rocket.id,
+          name: rocket.name,
+          description: rocket.description,
+          image: rocket.flickr_images[0],
+        }));
+
         state.status = 'success';
         state.hasErrors = false;
       })
