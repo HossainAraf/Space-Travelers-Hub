@@ -2,17 +2,19 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMissions } from '../redux/missionsSlice';
+// import '../styles/missions.css';
 
 // GET MISSIONS DATA FROM REDUX STORE
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions.missions);
-  //console.log('Missions:', missions);
+  //  console.log('Missions:', missions);
 
   // FETCH MISSIONS DATA ON PAGE LOAD
   useEffect(() => {
     dispatch(getMissions());
   }, [dispatch]);
+
   // SHOW LOADING, ERROR, OR MISSIONS DATA
   const renderMissions = () => {
     if (missions.length === 0) {
