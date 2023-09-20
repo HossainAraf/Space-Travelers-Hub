@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getRockets } from '../redux/rocketsSlice';
+// import '../styles/Rockets.css';
 
 // GET ROCKETS DATA FROM REDUX STORE
 const Rockets = () => {
@@ -20,9 +21,12 @@ const Rockets = () => {
     }
 
     return rockets.map((rocket) => (
-      <div key={rocket.id}>
+      <div className="container-rocket" key={rocket.id}>
         <h2>{rocket.name}</h2>
         <p>{rocket.description}</p>
+        <div className="img-rocket">
+          <img src={rocket.image} alt={rocket.image} />
+        </div>
       </div>
     ));
   };
