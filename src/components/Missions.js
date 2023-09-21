@@ -15,6 +15,15 @@ const Missions = () => {
     dispatch(getMissions());
   }, [dispatch]);
 
+  // HANDLE JOIN/LEAVE MISSION
+  const handleJoinMission = (id, joined) => {
+    if (joined) {
+      dispatch(leaveMission(id));
+    } else {
+      dispatch(joinMission(id));
+    }
+  };
+
   // SHOW LOADING, ERROR, OR MISSIONS DATA
   const renderMissions = () => {
     if (missions.length === 0) {

@@ -14,6 +14,7 @@ const Rockets = () => {
     dispatch(getRockets());
   }, [dispatch]);
 
+  // HANDLE RESERVE/CANCEL ROCKET
   const handleReserveRocket = (id, reserved) => {
     if (reserved) {
       dispatch(cancelRocket(id));
