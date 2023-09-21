@@ -143,14 +143,14 @@ Feel free to check the [issues page](https://github.com/HossainAraf/Space-Travel
 
 If you like this project, give a ⭐️  
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top </a>)</p>
 
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank  my coding partiner HossainAraf/Samuel
+I would like to thank  my coding partiner HossainAraf/Samuel kinyanjui
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
