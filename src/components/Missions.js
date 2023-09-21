@@ -1,7 +1,7 @@
 // IMPORTS
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMissions } from '../redux/missionsSlice';
+import { getMissions, joinMission, leaveMission } from '../redux/missionsSlice';
 // import '../styles/missions.css';
 
 // GET MISSIONS DATA FROM REDUX STORE
@@ -34,6 +34,12 @@ const Missions = () => {
       <div key={mission.id}>
         <h2>{mission.name}</h2>
         <p>{mission.description}</p>
+        {mission.joined ? (
+          <p>Joined</p>
+        ) : <p>Not a member</p>}
+        <button type="button" onClick={() => handleJoinMission(mission.id, mission.joined)}>
+          {mission.joined ? 'Leave Mission' : 'Join Mission'}
+        </button>
       </div>
     ));
   };
