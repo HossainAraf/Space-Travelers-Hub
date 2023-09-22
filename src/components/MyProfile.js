@@ -1,11 +1,10 @@
+// IMPORTS
 import React from 'react';
 import { useSelector } from 'react-redux';
 
 // RENDER MISSIONS DATA
 function Missions() {
   const missions = useSelector((state) => state.missions.missions);
-  console.log('MyProfile:', missions);
-  console.log('Missions:', missions);
 
   return (
     <div>
@@ -25,7 +24,6 @@ function Missions() {
 // RENDER ROCKET DATA
 function Rockets() {
   const rockets = useSelector((state) => state.rockets.rockets);
-  console.log('Rockets:', rockets);
 
   return (
     <div>
