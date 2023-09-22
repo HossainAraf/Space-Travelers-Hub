@@ -31,7 +31,7 @@ const Missions = () => {
     }
 
     return missions.map((mission) => (
-      <div key={mission.id}>
+      <div className="container-missions" key={mission.id}>
         <h2>{mission.name}</h2>
         <p>{mission.description}</p>
         {mission.joined ? (
