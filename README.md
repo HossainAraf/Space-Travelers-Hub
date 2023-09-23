@@ -107,12 +107,15 @@ Project can be deployed by using the gh-pages and other web platforms.
 
 ## 👥 Authors <a name="authors"></a>
 
-
-👤 **Samuel kinyanjui and HossainAraf **
+👤 **Samuel kinyanjui **
 
 - GitHub: [@githubhandle](https://github.com/samuelkinyanjui)
 GitHub: [@githubhandle](https://github.com/HossainAraf)
 
+**Md Arafat Hossain**
+
+- GitHub: <a href="https://github.com/HossainAraf">HossainAraf </a>
+- LinkedIn: <a href="https://linkedin.com/in/md-arafat-hossain-111403275"> Md. Arafat Hossain </a>
 
 
 
