@@ -1,5 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import {
+  Button, Container, Row, Col,
+} from 'react-bootstrap';
 import { getRockets, reserveRocket, cancelRocket } from '../redux/rocketsSlice';
 import '../styles/rockets.css';
 
@@ -29,25 +32,32 @@ const Rockets = () => {
     }
 
     return rockets.map((rocket) => (
-      <div className="container-rocket" key={rocket.id}>
-        <h2>{rocket.name}</h2>
-        <p>{rocket.description}</p>
-        {rocket.reserved ? (
-          <p>Reserved</p>
-        ) : null}
+      <Container className="container-rocket" key={rocket.id}>
+        <Row>
         <div className="img-rocket">
           <img src={rocket.image} alt={rocket.image} />
         </div>
-        <button type="button" onClick={() => handleReserveRocket(rocket.id, rocket.reserved)}>
+        <Col>
+        <h2>{rocket.name}</h2>
+        <Row className="reserved">
+          <div className="res">
+        {rocket.reserved ? (
+          <h5>Reserved</h5>
+        ) : null}
+        </div>
+        <p>{rocket.description}</p>
+        </Row>
+        <Button variant="primary" type="button" onClick={() => handleReserveRocket(rocket.id, rocket.reserved)}>
           {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
-        </button>
-      </div>
+        </Button>
+        </Col>
+        </Row>
+      </Container>
     ));
   };
 
   return (
     <section>
-      <h1>Rockets</h1>
       {renderRockets()}
     </section>
   );

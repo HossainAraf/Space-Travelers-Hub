@@ -28,6 +28,7 @@ const Nav = () => (
           </li>
         </ul>
       </Row>
+      <hr />
     </Container>
   </nav>
 );

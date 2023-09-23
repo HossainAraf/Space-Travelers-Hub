@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
 import MyProfile from '../components/MyProfile';
 
-// Create a mock store with the desired initial state
 const mockStore = configureMockStore([]);
 
 describe('MyProfile Component', () => {
@@ -48,16 +47,12 @@ describe('MyProfile Component', () => {
       </Provider>,
     );
 
-    // Check if joined missions are rendered
     expect(getByText('Mission 1')).toBeInTheDocument();
 
-    // Check if unjoined missions are not rendered
     expect(queryByText('Mission 2')).toBeNull();
 
-    // Check if reserved rockets are rendered
     expect(getByText('Rocket 1')).toBeInTheDocument();
 
-    // Check if unreserved rockets are not rendered
     expect(queryByText('Rocket 2')).toBeNull();
   });
 });

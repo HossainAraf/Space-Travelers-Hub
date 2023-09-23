@@ -4,11 +4,12 @@
 
 #navbar ul li {
   list-style-type: none;
+  color: #55a6ff;
 }
 
 #navbar ul li:last-child {
   list-style-type: none;
-  border-left: 1px solid #000;
+  border-left: 1px solid #55a6ff;
   padding-left: 10px;
 }
 
@@ -30,9 +31,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 17%;
+  flex-basis: 27%;
 }
 
-h1 {
+.nav h1 {
   flex-basis: 55%;
+}
+
+.nav img {
+  width: 88px;
 }

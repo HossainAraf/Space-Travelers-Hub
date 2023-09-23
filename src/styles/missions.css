@@ -1,0 +1,33 @@
+.missions-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.missions-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.missions-list li h2 {
+  flex: 1;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
+.table {
+  width: 95%;
+  margin: auto;
+}
+
+.mission-description {
+  width: 65%;
+}
+
+.status {
+  padding-top: 10px;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
