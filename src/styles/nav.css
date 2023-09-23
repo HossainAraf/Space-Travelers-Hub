@@ -1,0 +1,15 @@
+#navbar ul li {
+  list-style-type: none;
+}
+
+#navbar img {
+  width: 50px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline !important;
+}

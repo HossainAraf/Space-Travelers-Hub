@@ -1,28 +1,23 @@
-// App.js
-import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
-import "./App.css"
-
-function Layout() {
-  return (
-    <>
-      <h1>Layout</h1>
-      <Outlet />
-    </>
-  )
-}
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Rockets from './components/Rockets';
+import Missions from './components/Missions';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import Nav from './components/Nav';
+import MyProfile from './components/MyProfile';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
+      <Nav />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<div>Home page</div>} />
-          <Route path="about" element={<div>About page</div>} />
-          <Route path="*" element={<div>If page not found it goes here</div>} />
-        </Route>
+        <Route path="/" element={<Rockets />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="/myprofile" element={<MyProfile />} />
+        <Route path="*" element={<div>If page not found it goes here</div>} />
       </Routes>
-    </BrowserRouter>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

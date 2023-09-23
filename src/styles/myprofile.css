@@ -1,0 +1,29 @@
+.container-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-profile h1 {
+  align-self: self-start;
+  margin: 0 0 1% 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  margin: 0 1%;
+  padding: 1%;
+  border: 1px solid #ccc;
+}
+
+.container-list {
+  border: none;
+  flex-basis: 50%;
+}
