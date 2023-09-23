@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getRockets, reserveRocket, cancelRocket } from '../redux/rocketsSlice';
 import '../styles/rockets.css';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
 // GET ROCKETS DATA FROM REDUX STORE
 const Rockets = () => {
@@ -29,7 +30,7 @@ const Rockets = () => {
     }
 
     return rockets.map((rocket) => (
-      <div className="container-rocket" key={rocket.id}>
+      <Container className="container-rocket" key={rocket.id}>
         <h2>{rocket.name}</h2>
         <p>{rocket.description}</p>
         {rocket.reserved ? (
@@ -41,7 +42,7 @@ const Rockets = () => {
         <button type="button" onClick={() => handleReserveRocket(rocket.id, rocket.reserved)}>
           {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
         </button>
-      </div>
+      </Container>
     ));
   };
 
