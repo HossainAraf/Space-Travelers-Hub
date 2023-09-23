@@ -4,3 +4,11 @@
   justify-content: space-between;
   border: 1px solid #ccc;
 }
+
+.container-missions h2 {
+  font: weight 200px;
+}
+
+.container-missions p {
+  font-size: 20px;
+}
