@@ -1,18 +1,27 @@
+// IMPORTS
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
-// import { useDispatch } from 'react-redux';
-// import userReducer from './user/userSlice';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
 import rocketsReducer from './rocketsSlice';
 import missionsReducer from './missionsSlice';
 
-const reducer = combineReducers({
-  // user: userReducer,
-  rockets: rocketsReducer,
-  missions: missionsReducer,
+const persistConfig = {
+  key: 'root', // a unique identifier for the store
+  storage, // the storage to use
+  whitelist: ['missions', 'rockets'], // specify which reducers to persist
+};
+
+const rootReducer = combineReducers({
+  rockets: persistReducer(persistConfig, rocketsReducer),
+  missions: persistReducer(persistConfig, missionsReducer),
 });
 
 const store = configureStore({
-  reducer,
+  reducer: rootReducer,
 });
+
+// EXPORT
+export const persistor = persistStore(store);
 
 export default store;

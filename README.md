@@ -2,6 +2,7 @@
 <a name="readme-top"></a>
 <!-- TABLE OF CONTENTS -->
 
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -26,10 +27,8 @@
 
 # 📖 React & Redux group project - Space Travelers' Hub <a name="about-project"></a>
 
-**React & Redux group project - Space Travelers' Hub** is developed project done to 
-In this task, you will be working with the real live data from the SpaceX API. 
-Our task is to build a web application for a company that provides commercial and scientific space travel services. 
-The application will allow users to book rockets and join selected space missions.
+**Space Travelers' Hub
+Space Travelers' Hub is a React and Redux group project that leverages real live data from the SpaceX API. Our mission is to develop a web application for a company that specializes in providing commercial and scientific space travel services. With this application, users will have the opportunity to book rockets for upcoming missions and join selected space expeditions.
 
 ## 🛠 Built With <a name="built-with"></a>
 Using React documentation
@@ -55,9 +54,10 @@ Use store, actions and reducers in React
 
 ### Key Features <a name="key-features"></a>
 
--Rockets /Dragons
--Missions
--My Profile
+- Rocket Booking: Browse and book rockets for your space adventures.
+- Mission Participation: Join exciting space missions and be part of groundbreaking discoveries.
+- Real-Time SpaceX Data: Access up-to-date information directly from the SpaceX API.
+- User-Friendly Interface: An intuitive and visually appealing interface for an exceptional user experience.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,8 +94,7 @@ To run the project, execute the following command:
 
 ### Run tests
 
-> npx hint .
-
+> npm test
 
 ### Deployment
 
@@ -107,12 +106,15 @@ Project can be deployed by using the gh-pages and other web platforms.
 
 ## 👥 Authors <a name="authors"></a>
 
-
-👤 **Samuel kinyanjui and HossainAraf **
+👤 **Samuel kinyanjui **
 
 - GitHub: [@githubhandle](https://github.com/samuelkinyanjui)
 GitHub: [@githubhandle](https://github.com/HossainAraf)
 
+👤 **Md Arafat Hossain**
+
+- GitHub: <a href="https://github.com/HossainAraf">HossainAraf </a>
+- LinkedIn: <a href="https://linkedin.com/in/md-arafat-hossain-111403275"> Md. Arafat Hossain </a>
 
 
 
@@ -123,7 +125,7 @@ GitHub: [@githubhandle](https://github.com/HossainAraf)
 ## 🔭 Future Features <a name="future-features"></a>
 
 - More on API and Rudex
--Allow outo booking
+-Allow auto booking
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,14 +145,14 @@ Feel free to check the [issues page](https://github.com/HossainAraf/Space-Travel
 
 If you like this project, give a ⭐️  
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top </a>)</p>
 
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank  my coding partiner HossainAraf/Samuel
+I would like to thank  my coding partiner HossainAraf/Samuel kinyanjui, code reviewers & Microverse management
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
