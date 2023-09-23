@@ -9,23 +9,7 @@
 }
 
 .wrapper {
-  flex-wrap: nowrap;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.list {
-  list-style-type: none;
-}
-
-.list li {
-  margin: 0 1%;
-  padding: 1%;
-  border: 1px solid #ccc;
-}
-
-.container-list {
-  border: none;
-  flex-basis: 50%;
-}
