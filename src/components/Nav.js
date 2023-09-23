@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/nav.css';
-import '../asset/head.jpg'
+import icon from  '../asset/head.jpg'
 
 const Nav = () => (
   <nav id="navbar">
-    <ul>
+  <img src={icon} alt="icon" />
+       <ul>
       <li>
         <NavLink to="/" exact activeClassName="active">
           Rockets
