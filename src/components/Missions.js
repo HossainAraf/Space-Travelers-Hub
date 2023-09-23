@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMissions, joinMission, leaveMission } from '../redux/missionsSlice';
 import '../styles/missions.css';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
 // GET MISSIONS DATA FROM REDUX STORE
 const Missions = () => {
@@ -31,7 +32,8 @@ const Missions = () => {
     }
 
     return missions.map((mission) => (
-      <div className="container-missions" key={mission.id}>
+
+      <Container className="container-missions" key={mission.id}>
         <h2>{mission.name}</h2>
         <p>{mission.description}</p>
         {mission.joined ? (
@@ -40,7 +42,7 @@ const Missions = () => {
         <button type="button" onClick={() => handleJoinMission(mission.id, mission.joined)}>
           {mission.joined ? 'Leave Mission' : 'Join Mission'}
         </button>
-      </div>
+      </Container>
     ));
   };
 
