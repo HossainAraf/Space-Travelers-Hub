@@ -5,26 +5,6 @@ import { Container, Col, Row } from 'react-bootstrap';
 import '../styles/myprofile.css';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 
-// RENDER MISSIONS DATA
-function Missions() {
-  const missions = useSelector((state) => state.missions.missions);
-
-  return (
-    <Container className="container-list">
-      <Col>
-        <h2>My Missions</h2>
-        <ul className="list">
-          {missions.filter((mission) => mission.joined === true).map((mission) => (
-            <li key={mission.id}>
-              <h3>{mission.name}</h3>
-            </li>
-          ))}
-        </ul>
-      </Col>
-    </Container>
-  );
-}
-
 // RENDER ROCKET DATA
 function Rockets() {
   const rockets = useSelector((state) => state.rockets.rockets);
@@ -47,16 +27,4 @@ function Rockets() {
   );
 }
 
-const MyProfile = () => (
-  <Container>
-    <Col className="container-profile">
-      <hr />
-      <h1>My Profile</h1>
-      <Row className="wrapper">
-        <Missions />
-        <Rockets />
-      </Row>
-    </Col>
-  </Container>
-);
 export default MyProfile;
