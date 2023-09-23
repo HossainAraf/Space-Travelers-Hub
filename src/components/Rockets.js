@@ -31,17 +31,21 @@ const Rockets = () => {
 
     return rockets.map((rocket) => (
       <Container className="container-rocket" key={rocket.id}>
+        <Row>
+        <div className="img-rocket">
+          <img src={rocket.image} alt={rocket.image} />
+        </div>
+        <Col>
         <h2>{rocket.name}</h2>
         <p>{rocket.description}</p>
         {rocket.reserved ? (
           <p>Reserved</p>
-        ) : null}
-        <div className="img-rocket">
-          <img src={rocket.image} alt={rocket.image} />
-        </div>
+        ) : null}       
         <button type="button" onClick={() => handleReserveRocket(rocket.id, rocket.reserved)}>
           {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
         </button>
+        </Col>
+        </Row>
       </Container>
     ));
   };
