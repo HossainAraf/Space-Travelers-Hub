@@ -3,14 +3,33 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Container, Col, Row } from 'react-bootstrap';
 import '../styles/myprofile.css';
-import { Button, Container, Row, Col } from 'react-bootstrap';
+
+// RENDER MISSIONS DATA
+function Missions() {
+  const missions = useSelector((state) => state.missions.missions);
+
+  return (
+    <Container className=".container-list">
+      <Col>
+        <h2>My Rockets</h2>
+        <ul className="list">
+          {missions.filter((mission) => mission.joined === true).map((mission) => (
+            <li key={mission.id}>
+              <h3>{mission.name}</h3>
+            </li>
+          ))}
+        </ul>
+      </Col>
+    </Container>
+  );
+}
 
 // RENDER ROCKET DATA
 function Rockets() {
   const rockets = useSelector((state) => state.rockets.rockets);
 
   return (
-    <Container className="container-list">
+    <Container className=".container-list">
       <Col>
         <h2>My Rockets</h2>
         <ul className="list">
@@ -28,14 +47,12 @@ function Rockets() {
 }
 
 const MyProfile = () => (
-  <Container>
-    <Col className="container-profile">
-      <hr />
-      <Row className="wrapper">
-        <Missions />
-        <Rockets />
-      </Row>
-    </Col>
+  <Container className="container-profile">
+    <hr />
+    <Row className="wrapper">
+      <Missions />
+      <Rockets />
+    </Row>
   </Container>
 );
 export default MyProfile;

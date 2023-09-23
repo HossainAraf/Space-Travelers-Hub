@@ -13,7 +13,7 @@
 .container-rocket h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color:#000;  
+  color: #000;
 }
 
 .container-rocket p {
@@ -29,6 +29,30 @@
   flex-basis: 10%;
 }
 
-.container-rocket .img-rocket img { 
-  margin: 7%;
+.container-rocket .img-rocket img {
+  margin: 1%;
+  width: 10rem;
+}
+
+.reserved {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.reserved h5 {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #18a2b8;
+}
+
+.reserved p {
+  flex: 0 0 auto; /* Keeps the h2 elements from growing */
+  margin: 0; /* Removes default margins for h2 elements */
+  display: inline;
+}
+
+.reserved .res {
+  width: auto;
+  border-radius: 5%;
 }

@@ -1,18 +1,33 @@
-.container-missions {
+.missions-list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.missions-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.missions-list li h2 {
+  flex: 1;
+  margin: 0;
   border: 1px solid #ccc;
 }
 
-.container-missions h2 {
-  font: weight 200px;
+.table {
+  width: 95%;
+  margin: auto;
 }
 
-.container-missions p {
-  font-size: 20px;
+.mission-description {
+  width: 65%;
 }
 
-.container-missions Button {
-  color: blue;
+.status {
+  padding-top: 10px;
+}
+
+.align-middle {
+  vertical-align: middle;
 }

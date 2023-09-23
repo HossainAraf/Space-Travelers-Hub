@@ -5,7 +5,6 @@ import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk'; // Import Redux Thunk middleware
 import Missions from '../components/Missions';
 
-// Create a mock Redux store with Redux Thunk middleware
 const mockStore = configureMockStore([thunk]);
 
 const initialState = {
