@@ -3,6 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Container, Col, Row } from 'react-bootstrap';
 import '../styles/myprofile.css';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
 // RENDER MISSIONS DATA
 function Missions() {
