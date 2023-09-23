@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMissions, joinMission, leaveMission } from '../redux/missionsSlice';
-// import '../styles/missions.css';
+import '../styles/missions.css';
 
 // GET MISSIONS DATA FROM REDUX STORE
 const Missions = () => {
