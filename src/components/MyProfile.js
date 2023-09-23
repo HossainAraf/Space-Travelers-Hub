@@ -1,23 +1,26 @@
 // IMPORTS
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Container, Col, Row } from 'react-bootstrap';
+import '../styles/myprofile.css';
 
 // RENDER MISSIONS DATA
 function Missions() {
   const missions = useSelector((state) => state.missions.missions);
 
   return (
-    <div>
-      <ul>
-        {missions.filter((mission) => mission.joined === true).map((mission) => (
-          <li key={mission.id}>
-            <h3>{mission.name}</h3>
-            <p>{mission.description}</p>
-          </li>
-        ))}
-        <li>HI</li>
-      </ul>
-    </div>
+    <Container className=".container-list">
+      <Col>
+        <h2>My Rockets</h2>
+        <ul className="list">
+          {missions.filter((mission) => mission.joined === true).map((mission) => (
+            <li key={mission.id}>
+              <h3>{mission.name}</h3>
+            </li>
+          ))}
+        </ul>
+      </Col>
+    </Container>
   );
 }
 
@@ -26,37 +29,30 @@ function Rockets() {
   const rockets = useSelector((state) => state.rockets.rockets);
 
   return (
-    <div>
-      <ul>
-        {
-        rockets.filter((rocket) => rocket.reserved === true).map((rocket) => (
-          <li key={rocket.id}>
-            <h3>{rocket.name}</h3>
-            <p>{rocket.description}</p>
-          </li>
-        ))
-        }
-      </ul>
-    </div>
+    <Container className=".container-list">
+      <Col>
+        <h2>My Rockets</h2>
+        <ul className="list">
+          {
+          rockets.filter((rocket) => rocket.reserved === true).map((rocket) => (
+            <li key={rocket.id}>
+              <h3>{rocket.name}</h3>
+            </li>
+          ))
+          }
+        </ul>
+      </Col>
+    </Container>
   );
 }
 
-// // Prop validation for MyProfile component
-// MyProfile.propTypes = {
-//   missions: PropTypes.arrayOf(PropTypes.shape({
-//     id: PropTypes.number.isRequired,
-//     name: PropTypes.string.isRequired,
-//     description: PropTypes.string.isRequired,
-//     joined: PropTypes.bool.isRequired,
-//   })).isRequired,
-// };
-
 const MyProfile = () => (
-  <div>
-    <h1>My Profile</h1>
-    <h2>My Joined Missions</h2>
-    <Missions />
-    <Rockets />
-  </div>
+  <Container className="container-profile">
+    <hr />
+    <Row className="wrapper">
+      <Missions />
+      <Rockets />
+    </Row>
+  </Container>
 );
 export default MyProfile;

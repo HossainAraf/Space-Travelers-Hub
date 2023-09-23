@@ -15,13 +15,11 @@ describe('MyProfile Component', () => {
           {
             id: 1,
             name: 'Mission 1',
-            description: 'Description 1',
             joined: true,
           },
           {
             id: 2,
             name: 'Mission 2',
-            description: 'Description 2',
             joined: false,
           },
         ],
@@ -31,13 +29,11 @@ describe('MyProfile Component', () => {
           {
             id: 1,
             name: 'Rocket 1',
-            description: 'Rocket Description 1',
             reserved: true,
           },
           {
             id: 2,
             name: 'Rocket 2',
-            description: 'Rocket Description 2',
             reserved: false,
           },
         ],
@@ -54,18 +50,14 @@ describe('MyProfile Component', () => {
 
     // Check if joined missions are rendered
     expect(getByText('Mission 1')).toBeInTheDocument();
-    expect(getByText('Description 1')).toBeInTheDocument();
 
     // Check if unjoined missions are not rendered
     expect(queryByText('Mission 2')).toBeNull();
-    expect(queryByText('Description 2')).toBeNull();
 
     // Check if reserved rockets are rendered
     expect(getByText('Rocket 1')).toBeInTheDocument();
-    expect(getByText('Rocket Description 1')).toBeInTheDocument();
 
     // Check if unreserved rockets are not rendered
     expect(queryByText('Rocket 2')).toBeNull();
-    expect(queryByText('Rocket Description 2')).toBeNull();
   });
 });
