@@ -7,15 +7,13 @@
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 0 10px #ccc;
-
+  padding: 3%;
 }
 
 .container-rocket h2 {
   font-size: 1.5rem;
   font-weight: 700;
-
-
-  color:#000;
+  color:#000;  
 }
 
 .container-rocket p {
@@ -31,7 +29,6 @@
   flex-basis: 10%;
 }
 
-.container-rocket .img-rocket img {
- 
+.container-rocket .img-rocket img { 
   margin: 7%;
 }
