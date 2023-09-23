@@ -32,8 +32,9 @@ const Missions = () => {
     }
 
     return missions.map((mission) => (
-
+      
       <Container className="container-missions" key={mission.id}>
+        <Row>
         <h2>{mission.name}</h2>
         <p>{mission.description}</p>
         {mission.joined ? (
@@ -42,6 +43,7 @@ const Missions = () => {
         <button type="button" onClick={() => handleJoinMission(mission.id, mission.joined)}>
           {mission.joined ? 'Leave Mission' : 'Join Mission'}
         </button>
+        </Row>
       </Container>
     ));
   };
