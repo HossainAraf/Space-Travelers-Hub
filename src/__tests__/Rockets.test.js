@@ -10,5 +10,4 @@ test('Rockets component renders without errors', () => {
       <Rockets />
     </Provider>,
   );
-  // Your test assertions go here
 });
