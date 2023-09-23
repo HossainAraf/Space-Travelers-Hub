@@ -8,15 +8,14 @@
   background-color: #fff;
   box-shadow: 0 0 10px #ccc;
 
-  /* flex-grow: 1; */
 }
 
 .container-rocket h2 {
   font-size: 1.5rem;
   font-weight: 700;
 
-  /* margin: 10px 0; */
-  color: gold;
+
+  color:#000;
 }
 
 .container-rocket p {
@@ -33,6 +32,6 @@
 }
 
 .container-rocket .img-rocket img {
-  /* width: 10rem; */
+ 
   margin: 7%;
 }
