@@ -1,0 +1,39 @@
+.container-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  margin: 0 1%;
+  padding: 1%;
+  border: 1px solid #ccc;
+}
+
+.container-list {
+  border: none;
+}
+
+h2 {
+  padding-left: 3%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 50%;
+  padding: 2%;
+  border: none;
+}
