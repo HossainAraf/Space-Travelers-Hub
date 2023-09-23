@@ -13,3 +13,17 @@
   justify-content: space-between;
 }
 
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  margin: 0 1%;
+  padding: 1%;
+  border: 1px solid #ccc;
+}
+
+.container-list {
+  border: none;
+  flex-basis: 50%;
+}
