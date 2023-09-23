@@ -5,6 +5,7 @@ import {
 } from 'react-bootstrap';
 import { getRockets, reserveRocket, cancelRocket } from '../redux/rocketsSlice';
 import '../styles/rockets.css';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
 // GET ROCKETS DATA FROM REDUX STORE
 const Rockets = () => {

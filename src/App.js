@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Nav from './components/Nav';
 import MyProfile from './components/MyProfile';

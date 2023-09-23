@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Button, Table } from 'react-bootstrap';
 import { getMissions, joinMission, leaveMission } from '../redux/missionsSlice';
 import '../styles/missions.css';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
 const Missions = () => {
   const dispatch = useDispatch();

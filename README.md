@@ -105,8 +105,7 @@ Project can be deployed by using the gh-pages and other web platforms.
 
 ## 👥 Authors <a name="authors"></a>
 
-
-👤 **Samuel kinyanjui and HossainAraf **
+👤 **Samuel kinyanjui **
 
 - GitHub: [@githubhandle](https://github.com/samuelkinyanjui)
 GitHub: [@githubhandle](https://github.com/HossainAraf)

@@ -9,7 +9,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
 
 .list {
   list-style-type: none;
@@ -37,3 +36,4 @@ h2 {
   padding: 2%;
   border: none;
 }
+  
