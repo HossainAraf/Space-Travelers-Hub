@@ -40,9 +40,9 @@ const Missions = () => {
         {mission.joined ? (
           <p>Joined</p>
         ) : <p>Not a member</p>}
-        <button type="button" onClick={() => handleJoinMission(mission.id, mission.joined)}>
+        <Button type="button" onClick={() => handleJoinMission(mission.id, mission.joined)}>
           {mission.joined ? 'Leave Mission' : 'Join Mission'}
-        </button>
+        </Button>
         </Row>
       </Container>
     ));
