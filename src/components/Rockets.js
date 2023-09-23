@@ -6,8 +6,7 @@ import '../styles/rockets.css';
 // GET ROCKETS DATA FROM REDUX STORE
 const Rockets = () => {
   const dispatch = useDispatch();
-  const rockets = useSelector((state) => state.rockets.rockets);
-  console.log('Rockets:', rockets);
+  const rockets = useSelector((state) => state.rockets.rockets); 
 
   // FETCH ROCKETS DATA ON PAGE LOAD
   useEffect(() => {
