@@ -14,6 +14,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: #000;
+}
 
 .container-rocket p {
   font-size: 1rem;
@@ -43,8 +44,8 @@
   flex: 1;
   margin: 0 10px;
   background-color: #18a2b8;
-  /* display: inline; */
 }
+
 .reserved p {
   flex: 0 0 auto; /* Keeps the h2 elements from growing */
   margin: 0; /* Removes default margins for h2 elements */
@@ -55,4 +56,3 @@
   width: auto;
   border-radius: 5%;
 }
-
