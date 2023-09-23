@@ -38,3 +38,4 @@ const MyProfile = () => (
     </Col>
   </Container>
 );
+export default MyProfile;
