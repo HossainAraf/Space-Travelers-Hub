@@ -27,4 +27,14 @@ function Rockets() {
   );
 }
 
-export default MyProfile;
+const MyProfile = () => (
+  <Container>
+    <Col className="container-profile">
+      <hr />
+      <Row className="wrapper">
+        <Missions />
+        <Rockets />
+      </Row>
+    </Col>
+  </Container>
+);
